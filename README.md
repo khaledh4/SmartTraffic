@@ -25,15 +25,11 @@ The system abandons static timing in favor of the Lyapunov Max-Pressure control 
 * **Q (Queue Length):** Number of vehicles detected by the YOLOv8 AI.
 * **W (Wait Time):** Total time since the road last had a green light.
 
-## System Architecture
-![Alt text](Images/digram.png)
+## AI Model Training
+![Alt text](Images/posimgs.png)
+![Alt text](Images/recg.png)
 
-The hardware and software seamlessly communicate to control the intersection:
-1. ESP32-CAM captures and streams intersection video.
-2. Network Gateway routes the stream to the Cloud Computing/Edge environment.
-3. The server runs AI inferences (YOLOv8) and the Control Algorithm.
-4. Control commands are forwarded via the Gateway to an Arduino UNO R4 WiFi.
-5. The Arduino executes the light switches on the Traffic Light Module and returns status confirmations.
+To achieve accurate vehicle detection and classification, the AI model was trained using a custom dataset prepared through Roboflow. Images were collected from multiple angles and under varying lighting conditions and backgrounds. Each image was carefully annotated to distinguish between regular vehicles and emergency vehicles. The model was trained to accurately recognize and classify vehicles, as well as count them in real time, ensuring reliable performance.
 
 ## System Architecture
 ![Alt text](Images/digram.png)
