@@ -36,6 +36,8 @@ The hardware and software seamlessly communicate to control the intersection:
 5. The Arduino executes the light switches on the Traffic Light Module and returns status confirmations.
 
 ## Simulation & Results
+![Alt text](Images/simulationResult.png)
+
 Before physical prototyping, the system was extensively benchmarked against static baselines using **SUMO (Simulation of Urban MObility)** and the **LuST (Luxembourg SUMO Traffic)** real-world dataset via a **TraCI** Python controller interface.
 
 **Performance Improvements:**
