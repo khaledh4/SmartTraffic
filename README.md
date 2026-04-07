@@ -26,8 +26,8 @@ The system abandons static timing in favor of the Lyapunov Max-Pressure control 
 * **W (Wait Time):** Total time since the road last had a green light.
 
 ## AI Model Training
-![Alt text](Images/posimgs.png)
-![Alt text](Images/recg.png)
+![Alt text](Images/posimgs.gif)
+![Alt text](Images/recg.gif)
 
 To achieve accurate vehicle detection and classification, the AI model was trained using a custom dataset prepared through Roboflow. Images were collected from multiple angles and under varying lighting conditions and backgrounds. Each image was carefully annotated to distinguish between regular vehicles and emergency vehicles. The model was trained to accurately recognize and classify vehicles, as well as count them in real time, ensuring reliable performance.
 
