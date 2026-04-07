@@ -18,7 +18,7 @@ Our proposed system is a cost-effective, easily deployable Smart Traffic Managem
 * **Cost-Effective & Scalable:** Replaces expensive wired sensors and heavy construction with cheap wireless cameras and simple microcontrollers, making it ideal for historic and established cities.
 
 ## Scientific Foundation
-The system abandons static timing in favor of the **Lyapunov Max-Pressure** control algorithm to guarantee mathematical stability during peak traffic hours. The algorithm calculates a pressure score for each road using the formula:
+The system abandons static timing in favor of the Lyapunov Max-Pressure control algorithm to guarantee mathematical stability during peak traffic hours. The algorithm calculates a pressure score for each road using the formula:
 
 **`P = Q × W²`**
 * **P (Pressure Score):** The calculated priority for the road.
@@ -35,14 +35,24 @@ The hardware and software seamlessly communicate to control the intersection:
 4. Control commands are forwarded via the Gateway to an Arduino UNO R4 WiFi.
 5. The Arduino executes the light switches on the Traffic Light Module and returns status confirmations.
 
+## System Architecture
+![Alt text](Images/digram.png)
+
+The hardware and software seamlessly communicate to control the intersection:
+1. ESP32-CAM captures and streams intersection video.
+2. Network Gateway routes the stream to the Cloud Computing/Edge environment.
+3. The server runs AI inferences (YOLOv8) and the Control Algorithm.
+4. Control commands are forwarded via the Gateway to an Arduino UNO R4 WiFi.
+5. The Arduino executes the light switches on the Traffic Light Module and returns status confirmations.
+
 ## Simulation & Results
 ![Alt text](Images/simulationResult.png)
 
-Before physical prototyping, the system was extensively benchmarked against static baselines using **SUMO (Simulation of Urban MObility)** and the **LuST (Luxembourg SUMO Traffic)** real-world dataset via a **TraCI** Python controller interface.
+Before physical prototyping, the system was extensively benchmarked against static baselines using SUMO (Simulation of Urban MObility) and the LuST (Luxembourg SUMO Traffic) real-world dataset via a TraCI Python controller interface.
 
 **Performance Improvements:**
-* **Average Delay:** Reduced by approximately **50%** compared to traditional fixed-time systems.
-* **Average Travel Time:** Decreased from **779 seconds to 638 seconds**.
+* **Average Delay:** Reduced by approximately 50% compared to traditional fixed-time systems.
+* **Average Travel Time:** Decreased from 779 seconds to 638 seconds.
 * **Throughput:** Achieved higher capacity, keeping the intersection stable even under heavy load.
 
 ## Future Work
