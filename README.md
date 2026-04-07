@@ -26,13 +26,17 @@ The system abandons static timing in favor of the Lyapunov Max-Pressure control 
 * **W (Wait Time):** Total time since the road last had a green light.
 
 ## AI Model Training
-![Alt text](Images/posimgs.gif)
-![Alt text](Images/recg.gif)
+<table>
+  <tr>
+    <td><img src="Images/posimgs.gif" width="400"></td>
+    <td><img src="Images/recg.gif" width="400"></td>
+  </tr>
+</table>
 
 To achieve accurate vehicle detection and classification, the AI model was trained using a custom dataset prepared through Roboflow. Images were collected from multiple angles and under varying lighting conditions and backgrounds. Each image was carefully annotated to distinguish between regular vehicles and emergency vehicles. The model was trained to accurately recognize and classify vehicles, as well as count them in real time, ensuring reliable performance.
 
 ## System Architecture
-![Alt text](Images/digram.png)
+<img src="Images/digram.png" width="800">
 
 The hardware and software seamlessly communicate to control the intersection:
 1. ESP32-CAM captures and streams intersection video.
@@ -42,7 +46,7 @@ The hardware and software seamlessly communicate to control the intersection:
 5. The Arduino executes the light switches on the Traffic Light Module and returns status confirmations.
 
 ## Simulation & Results
-![Alt text](Images/simulationResult.png)
+<img src="Images/simulationResult.png" width="800">
 
 Before physical prototyping, the system was extensively benchmarked against static baselines using SUMO (Simulation of Urban MObility) and the LuST (Luxembourg SUMO Traffic) real-world dataset via a TraCI Python controller interface.
 
