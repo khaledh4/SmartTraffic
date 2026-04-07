@@ -26,12 +26,14 @@ The system abandons static timing in favor of the **Lyapunov Max-Pressure** cont
 * **W (Wait Time):** Total time since the road last had a green light.
 
 ## System Architecture
+![Alt text](Images/digram.png)
+
 The hardware and software seamlessly communicate to control the intersection:
-1. **ESP32-CAM** captures and streams intersection video.
-2. **Network Gateway** routes the stream to the **Cloud Computing/Edge** environment.
+1. ESP32-CAM captures and streams intersection video.
+2. Network Gateway routes the stream to the Cloud Computing/Edge environment.
 3. The server runs AI inferences (YOLOv8) and the Control Algorithm.
-4. Control commands are forwarded via the Gateway to an **Arduino UNO R4 WiFi**.
-5. The Arduino executes the light switches on the **Traffic Light Module** and returns status confirmations.
+4. Control commands are forwarded via the Gateway to an Arduino UNO R4 WiFi.
+5. The Arduino executes the light switches on the Traffic Light Module and returns status confirmations.
 
 ## Simulation & Results
 Before physical prototyping, the system was extensively benchmarked against static baselines using **SUMO (Simulation of Urban MObility)** and the **LuST (Luxembourg SUMO Traffic)** real-world dataset via a **TraCI** Python controller interface.
