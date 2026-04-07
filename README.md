@@ -48,7 +48,7 @@ The hardware and software seamlessly communicate to control the intersection:
 ## Simulation & Results
 <img src="Images/simulationResult.png" width="800">
 
-Before physical prototyping, the system was extensively benchmarked against static baselines using SUMO (Simulation of Urban MObility) and the LuST (Luxembourg SUMO Traffic) real-world dataset via a TraCI Python controller interface.
+Before physical prototyping, the system was extensively benchmarked against static baselines using SUMO (Simulation of Urban Mobility) and the LuST (Luxembourg SUMO Traffic) real-world dataset via a TraCI Python controller interface.
 
 **Performance Improvements:**
 * **Average Delay:** Reduced by approximately 50% compared to traditional fixed-time systems.
