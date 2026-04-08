@@ -14,17 +14,19 @@ This repository contains the graduation project developed for the Network Engine
 ## Project Overview
 Current traffic lights operate on pre-set timers (fixed-time inefficiency), ignoring real-time traffic load, which leads to high latency at intersections and critical delays for emergency responders. 
 
-Our proposed system is a cost-effective, easily deployable Smart Traffic Management System that utilizes Computer Vision (YOLOv8), IoT infrastructure, and a mathematically proven Dynamic Optimization Algorithm to minimize wait times, maximize intersection throughput, and prioritize emergency vehicles.
+Our proposed system is a cost-effective, easily deployable Smart Traffic Management System that utilizes **Computer Vision (YOLOv8)**, **IoT infrastructure**, and a mathematically proven Dynamic Optimization Algorithm to minimize wait times, maximize intersection throughput, and prioritize emergency vehicles.
 
 ## Key Features & Objectives
 * **AI Vehicle Detection:** High-accuracy real-time vehicle counting and emergency vehicle recognition using YOLOv8.
 * **IoT Connectivity:** Seamless wireless communication between edge/cloud computing, ESP32-CAMs, and Arduino controllers.
-* **Dynamic Optimization:** Adaptive traffic signal control utilizing the Lyapunov Max-Pressure algorithm to reduce waiting times.
+* **Algorithm Flexibility:** The system is completely algorithm-agnostic. It is built to seamlessly plug in and apply **any custom control algorithm** to optimize traffic flow.
 * **Emergency Vehicle Priority:** Built-in priority mechanisms for ambulances and fire trucks to prevent critical response time failures while maintaining regular traffic flow.
 * **Cost-Effective & Scalable:** Replaces expensive wired sensors and heavy construction with cheap wireless cameras and simple microcontrollers, making it ideal for historic and established cities.
 
-## Scientific Foundation
-The system abandons static timing in favor of the Lyapunov Max-Pressure control algorithm to guarantee mathematical stability during peak traffic hours. The algorithm calculates a pressure score for each road using the formula:
+## Scientific Foundation & Control Logic
+The system abandons static timing in favor of dynamic optimization algorithms to guarantee mathematical stability during peak traffic hours. Because of its flexible design, any mathematical model can be tested and applied. 
+
+As our primary tested control logic, we implemented a Max-Pressure algorithm that calculates a pressure score for each road using the following formula:
 
 **`P = Q × W²`**
 * **P (Pressure Score):** The calculated priority for the road.
@@ -45,7 +47,7 @@ To achieve accurate vehicle detection and classification, the AI model was train
 The hardware and software seamlessly communicate to control the intersection:
 1. ESP32-CAM captures and streams intersection video.
 2. Network Gateway routes the stream to the Cloud Computing/Edge environment.
-3. The server runs AI inferences (YOLOv8) and the Control Algorithm.
+3. The server runs AI inferences (YOLOv8) and the applied Control Algorithm.
 4. Control commands are forwarded via the Gateway to an Arduino UNO R4 WiFi.
 5. The Arduino executes the light switches on the Traffic Light Module and returns status confirmations.
 
@@ -55,8 +57,29 @@ The hardware and software seamlessly communicate to control the intersection:
 To monitor and manage the intersection in real time, a centralized web dashboard was developed. The control panel provides:
 * **Live Video Feeds:** Displays real-time streams from all four intersection cameras (CAM 01 - CAM 04) showing active YOLOv8 object detection bounding boxes.
 * **Real-Time Metrics:** Continuously updates the active car count, wait time, and calculated pressure score for each lane.
-* **Signal Status:** Shows the current state of the traffic lights.
+* **Signal Status:** Shows the current state of the traffic lights (Red/Green) and active timers.
+* **Operation Modes:** Allows administrators to switch the system on-the-fly between **Static Mode** (standard 30s cycle) and **Adaptive Mode**. The architecture is highly flexible, meaning **any custom algorithm** can be loaded and executed as the active Adaptive Mode.
 * **Emergency Controls:** Features a "STOP ALL" manual override button for immediate intersection halting during critical situations.
+
+## Physical Prototype & Hardware Development
+To demonstrate the system in a real-world scenario, a physical scale model was built. This development process involved custom structural work and hardware integration:
+
+<table align="center">
+  <tr>
+    <td><img src="Images/pipe.jpg" width="300"><br><sub><b>Base Construction:</b> Preparing the wooden intersection board.</sub></td>
+    <td><img src="Images/sticker.jpg" width="300"><br><sub><b>Structural Framework:</b> PVC conduits used for traffic light poles.</sub></td>
+    <td><img src="Images/base.jpg" width="300"><br><sub><b>Finishing:</b> Painting the infrastructure for a realistic look.</sub></td>
+  </tr>
+  <tr>
+    <td><img src="Images/paint.jpg" width="300"><br><sub><b>Road Design:</b> Applying vinyl for road textures and lane markings.</sub></td>
+    <td><img src="Images/wire.jpg" width="300"><br><sub><b>Electronics:</b> Custom wire splicing for component connectivity.</sub></td>
+    <td><img src="Images/cover.jpg" width="300"><br><sub><b>Hardware Integration:</b> Final wiring of sensors and microcontrollers.</sub></td>
+  </tr>
+</table>
+
+* **Structure:** The intersection was built on a wooden base using a drill for secure mounting.
+* **Poles & Gantries:** Custom-cut PVC pipes and joints were used to create the supports for the traffic light modules and ESP32 cameras.
+* **Wiring:** Hand-spliced and soldered red/black wires were used to connect the central Arduino to the various traffic light signals across the board.
 
 ## Simulation & Results
 <img src="Images/simulationResult.png" width="800">
