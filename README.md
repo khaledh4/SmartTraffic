@@ -14,7 +14,7 @@ This repository contains the graduation project developed for the Network Engine
 ## Project Overview
 Current traffic lights operate on pre-set timers (fixed-time inefficiency), ignoring real-time traffic load, which leads to high latency at intersections and critical delays for emergency responders. 
 
-Our proposed system is a cost-effective, easily deployable Smart Traffic Management System that utilizes **Computer Vision (YOLOv8)**, **IoT infrastructure**, and a mathematically proven **Dynamic Optimization Algorithm** to minimize wait times, maximize intersection throughput, and prioritize emergency vehicles.
+Our proposed system is a cost-effective, easily deployable Smart Traffic Management System that utilizes Computer Vision (YOLOv8), IoT infrastructure, and a mathematically proven Dynamic Optimization Algorithm to minimize wait times, maximize intersection throughput, and prioritize emergency vehicles.
 
 ## Key Features & Objectives
 * **AI Vehicle Detection:** High-accuracy real-time vehicle counting and emergency vehicle recognition using YOLOv8.
@@ -32,12 +32,10 @@ The system abandons static timing in favor of the Lyapunov Max-Pressure control 
 * **W (Wait Time):** Total time since the road last had a green light.
 
 ## AI Model Training
-<table>
-  <tr>
-    <td><img src="Images/posimgs.gif" width="400"></td>
-    <td><img src="Images/recg.gif" width="400"></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="Images/posimgs.gif" width="480" />
+  <img src="Images/recg.gif" width="480" />
+</p>
 
 To achieve accurate vehicle detection and classification, the AI model was trained using a custom dataset prepared through Roboflow. Images were collected from multiple angles and under varying lighting conditions and backgrounds. Each image was carefully annotated to distinguish between regular vehicles and emergency vehicles. The model was trained to accurately recognize and classify vehicles, as well as count them in real time, ensuring reliable performance.
 
@@ -50,6 +48,15 @@ The hardware and software seamlessly communicate to control the intersection:
 3. The server runs AI inferences (YOLOv8) and the Control Algorithm.
 4. Control commands are forwarded via the Gateway to an Arduino UNO R4 WiFi.
 5. The Arduino executes the light switches on the Traffic Light Module and returns status confirmations.
+
+## Web Dashboard & Live Surveillance
+<img src="Images/dashboard.png" width="1000">
+
+To monitor and manage the intersection in real time, a centralized web dashboard was developed. The control panel provides:
+* **Live Video Feeds:** Displays real-time streams from all four intersection cameras (CAM 01 - CAM 04) showing active YOLOv8 object detection bounding boxes.
+* **Real-Time Metrics:** Continuously updates the active car count, wait time, and calculated pressure score for each lane.
+* **Signal Status:** Shows the current state of the traffic lights.
+* **Emergency Controls:** Features a "STOP ALL" manual override button for immediate intersection halting during critical situations.
 
 ## Simulation & Results
 <img src="Images/simulationResult.png" width="800">
