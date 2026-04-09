@@ -75,6 +75,11 @@ To demonstrate the system in a real-world scenario, a physical scale model was b
     <td><img src="Images/wire.jpg" width="300"><br><sub><b>Electronics:</b> Custom wire splicing for component connectivity.</sub></td>
     <td><img src="Images/cover.jpg" width="300"><br><sub><b>Hardware Integration:</b> Final wiring of sensors and microcontrollers.</sub></td>
   </tr>
+  <tr>
+    <td><img src="Images/light.jpg" width="300"><br><sub><b>Road Design:</b> Applying vinyl for road textures and lane markings.</sub></td>
+    <td><img src="Images/env.jpeg" width="300"><br><sub><b>Electronics:</b> Custom wire splicing for component connectivity.</sub></td>
+    <td><img src="Images/pic1.jpeg" width="300"><br><sub><b>Hardware Integration:</b> Final wiring of sensors and microcontrollers.</sub></td>
+  </tr>
 </table>
 
 * **Structure:** The intersection was built on a wooden base using a drill for secure mounting.
