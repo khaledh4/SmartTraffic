@@ -2,6 +2,7 @@
 **Smart Traffic Management System Using IoT and AI Technology**
 
 This repository contains the graduation project developed for the Network Engineering and Security Department at Jordan University of Science and Technology (Fall 2026).
+## 🎬 Video Demonstration[ Watch the full system demonstration video on Google Drive](https://drive.google.com/file/d/1kwgVzu2Jjx1p1-qzQzyabMcmnhXq8ieX/view?usp=sharing)
 <table>
   <tr>
     <td><img src="Images/pic1.jpeg" width="480"></td>
