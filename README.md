@@ -57,8 +57,7 @@ The hardware and software seamlessly communicate to control the intersection:
 To monitor and manage the intersection in real time, a centralized web dashboard was developed. The control panel provides:
 * **Live Video Feeds:** Displays real-time streams from all four intersection cameras (CAM 01 - CAM 04) showing active YOLOv8 object detection bounding boxes.
 * **Real-Time Metrics:** Continuously updates the active car count, wait time, and calculated pressure score for each lane.
-* **Signal Status:** Shows the current state of the traffic lights (Red/Green) and active timers.
-* **Operation Modes:** Allows administrators to switch the system on-the-fly between **Static Mode** (standard 30s cycle) and **Adaptive Mode**. The architecture is highly flexible, meaning **any custom algorithm** can be loaded and executed as the active Adaptive Mode.
+* **Signal Status:** Shows the current state of the traffic lights.
 * **Emergency Controls:** Features a "STOP ALL" manual override button for immediate intersection halting during critical situations.
 
 ## Physical Prototype & Hardware Development
