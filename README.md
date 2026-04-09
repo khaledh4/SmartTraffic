@@ -111,7 +111,7 @@ To demonstrate the system in a real-world scenario, a physical scale model was b
 
 * **Structure:** The intersection was built on a wooden base using a drill for secure mounting.
 * **Poles & Gantries:** Custom-cut PVC pipes and joints were used to create the supports for the traffic light modules and ESP32 cameras.
-* **Wiring:** Hand-spliced and soldered red/black wires were used to connect the central Arduino to the various traffic light signals across the board.
+* **Wiring:** Hand-spliced and soldered wires were used to connect the central Arduino to the various traffic light signals across the board.
 
 ## Simulation & Results
 <img src="Images/simulationResult.png" width="800">
@@ -124,7 +124,7 @@ Before physical prototyping, the system was extensively benchmarked against stat
 * **Throughput:** Achieved higher capacity, keeping the intersection stable even under heavy load.
 
 ## Future Work
-* **Relay-Based Switching Model:** Integrating relays to seamlessly fail-over between smart AI control and normal fixed-time control if the network drops.
+* **Relay-Based Switching Model:** Integrating relays to seamlessly fail over between smart AI control and normal fixed-time control if the network drops.
 * **Ultrasonic Sensors:** Adding hardware fallbacks to detect if a camera lens is blocked or obscured.
 * **Advanced Emergency Signaling:** Deploying dedicated smart signals that safely guide emergency vehicles through intersections while optimizing the clearing of civilian traffic.
 
