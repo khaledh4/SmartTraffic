@@ -66,22 +66,48 @@ To demonstrate the system in a real-world scenario, a physical scale model was b
 
 <table align="center">
   <tr>
-    <td><img src="Images/pipe.jpg" width="300"><br><sub><b>Base Construction:</b> Preparing the wooden intersection board.</sub></td>
-    <td><img src="Images/sticker.jpg" width="300"><br><sub><b>Structural Framework:</b> PVC conduits used for traffic light poles.</sub></td>
-    <td><img src="Images/base.jpg" width="300"><br><sub><b>Finishing:</b> Painting the infrastructure for a realistic look.</sub></td>
+    <td align="center" width="33%">
+      <img src="Images/base.jpg" height="220" width="220" style="object-fit: cover;"><br>
+      <sub><b>Base Construction:</b> Preparing the wooden intersection board.</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="Images/sticker.jpg" height="220" width="220" style="object-fit: cover;"><br>
+      <sub><b>Road Design:</b> Vinyl rolls for road textures and lane markings.</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="Images/pipe.jpg" height="220" width="220" style="object-fit: cover;"><br>
+      <sub><b>Structural Framework:</b> Cutting PVC conduits for traffic light poles.</sub>
+    </td>
   </tr>
   <tr>
-    <td><img src="Images/paint.jpg" width="300"><br><sub><b>Road Design:</b> Applying vinyl for road textures and lane markings.</sub></td>
-    <td><img src="Images/wire.jpg" width="300"><br><sub><b>Electronics:</b> Custom wire splicing for component connectivity.</sub></td>
-    <td><img src="Images/cover.jpg" width="300"><br><sub><b>Hardware Integration:</b> Final wiring of sensors and microcontrollers.</sub></td>
+    <td align="center">
+      <img src="Images/paint.jpg" height="220" width="220" style="object-fit: cover;"><br>
+      <sub><b>Finishing:</b> Painting the PVC infrastructure for a realistic look.</sub>
+    </td>
+    <td align="center">
+      <img src="Images/wire.jpg" height="220" width="220" style="object-fit: cover;"><br>
+      <sub><b>Electronics:</b> Custom wire splicing for component connectivity.</sub>
+    </td>
+    <td align="center">
+      <img src="Images/cover.jpg" height="220" width="220" style="object-fit: cover;"><br>
+      <sub><b>Insulation:</b> Applying heat shrink tubing to secure wire connections.</sub>
+    </td>
   </tr>
   <tr>
-    <td><img src="Images/light.jpg" width="300"><br><sub><b>Road Design:</b> Applying vinyl for road textures and lane markings.</sub></td>
-    <td><img src="Images/env.jpeg" width="300"><br><sub><b>Electronics:</b> Custom wire splicing for component connectivity.</sub></td>
-    <td><img src="Images/pic1.jpeg" width="300"><br><sub><b>Hardware Integration:</b> Final wiring of sensors and microcontrollers.</sub></td>
+    <td align="center">
+      <img src="Images/light.jpg" height="220" width="220" style="object-fit: cover;"><br>
+      <sub><b>Component Testing:</b> Testing LED traffic modules prior to assembly.</sub>
+    </td>
+    <td align="center">
+      <img src="Images/env.jpeg" height="220" width="220" style="object-fit: cover;"><br>
+      <sub><b>Final Assembly:</b> Top-down view of the fully assembled physical prototype.</sub>
+    </td>
+    <td align="center">
+      <img src="Images/pic1.jpeg" height="220" width="220" style="object-fit: cover;"><br>
+      <sub><b>Hardware Integration:</b> Complete setup with sensors, lights, and scale vehicles.</sub>
+    </td>
   </tr>
 </table>
-
 * **Structure:** The intersection was built on a wooden base using a drill for secure mounting.
 * **Poles & Gantries:** Custom-cut PVC pipes and joints were used to create the supports for the traffic light modules and ESP32 cameras.
 * **Wiring:** Hand-spliced and soldered red/black wires were used to connect the central Arduino to the various traffic light signals across the board.
