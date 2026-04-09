@@ -108,6 +108,7 @@ To demonstrate the system in a real-world scenario, a physical scale model was b
     </td>
   </tr>
 </table>
+
 * **Structure:** The intersection was built on a wooden base using a drill for secure mounting.
 * **Poles & Gantries:** Custom-cut PVC pipes and joints were used to create the supports for the traffic light modules and ESP32 cameras.
 * **Wiring:** Hand-spliced and soldered red/black wires were used to connect the central Arduino to the various traffic light signals across the board.
