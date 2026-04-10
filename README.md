@@ -6,7 +6,7 @@ This repository contains the graduation project developed for the Network Engine
 
 <br>
 
-### Watch the video demonstration here [(Demonstration Video)](https://drive.google.com/file/d/10BsdG9Q_iznuHvMeiyBu6FtfrUq_AhGE/view?usp=drive_link)
+## Watch the video demonstration here [(Demonstration Video)](https://drive.google.com/file/d/10BsdG9Q_iznuHvMeiyBu6FtfrUq_AhGE/view?usp=drive_link)
 
 <br>
 
@@ -40,7 +40,7 @@ As our primary tested control logic, we implemented a Max-Pressure algorithm tha
 * **W (Wait Time):** Total time since the road last had a green light.
 
 ## AI Model Training
-<p align="center">
+<p>
   <img src="Images/posimgs.gif" width="400" />
   <img src="Images/recg.gif" width="400" />
 </p>
