@@ -1,20 +1,23 @@
-# SmartTraffic
-**Smart Traffic Management System Using IoT and AI Technology**
+<div align="center">
+
+# Smart Traffic Management System Using IoT and AI Technology
 
 This repository contains the graduation project developed for the Network Engineering and Security Department at Jordan University of Science and Technology (Fall 2026).
 
-# Watch the video demonstration here [(Demonstration Video)](https://drive.google.com/file/d/10BsdG9Q_iznuHvMeiyBu6FtfrUq_AhGE/view?usp=drive_link)
+<br>
 
-<table>
-  <tr>
-    <td><img src="Images/pic1.jpeg" width="480"></td>
-    <td><img src="Images/env.jpeg" width="480"></td>
-  </tr>
-</table>
+### Watch the video demonstration here [(Demonstration Video)](https://drive.google.com/file/d/10BsdG9Q_iznuHvMeiyBu6FtfrUq_AhGE/view?usp=drive_link)
+
+<br>
+
+<img src="Images/pic1.jpeg" width="45%"> &nbsp; <img src="Images/env.jpeg" width="45%">
+
+</div>
 
 ---
 
 ## Project Overview
+
 Current traffic lights operate on pre-set timers (fixed-time inefficiency), ignoring real-time traffic load, which leads to high latency at intersections and critical delays for emergency responders. 
 
 Our proposed system is a cost-effective, easily deployable Smart Traffic Management System that utilizes Computer Vision (YOLOv8), IoT infrastructure, and a Dynamic Algorithm to minimize wait times, maximize intersection throughput, and prioritize emergency vehicles.
