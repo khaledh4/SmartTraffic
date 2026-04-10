@@ -133,7 +133,8 @@ Before physical prototyping, the system was extensively benchmarked against stat
 * **Ultrasonic Sensors:** Adding hardware fallbacks to detect if a camera lens is blocked or obscured.
 * **Advanced Emergency Signaling:** Deploying dedicated smart signals that safely guide emergency vehicles through intersections while optimizing the clearing of civilian traffic.
 
-## Team Members
+## Team Members and Supervisor 
+Supervisor Dr. Omar Al Jarrah
 * Khaled Abdalnasser Aldabet
 * Mohammad Iyad Shatarah
 * Amine Feras Kiwan
