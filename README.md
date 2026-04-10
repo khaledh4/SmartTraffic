@@ -35,8 +35,8 @@ As our primary tested control logic, we implemented a Max-Pressure algorithm tha
 
 ## AI Model Training
 <p align="center">
-  <img src="Images/posimgs.gif" width="450" />
-  <img src="Images/recg.gif" width="450" />
+  <img src="Images/posimgs.gif" width="400" />
+  <img src="Images/recg.gif" width="400" />
 </p>
 
 To achieve accurate vehicle detection and classification, the AI model was trained using a custom dataset prepared through Roboflow. Images were collected from multiple angles and under varying lighting conditions and backgrounds. Each image was carefully annotated to distinguish between regular vehicles and emergency vehicles. The model was trained to accurately recognize and classify vehicles, as well as count them in real time, ensuring reliable performance.
