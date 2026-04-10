@@ -2,6 +2,9 @@
 **Smart Traffic Management System Using IoT and AI Technology**
 
 This repository contains the graduation project developed for the Network Engineering and Security Department at Jordan University of Science and Technology (Fall 2026).
+
+# Watch the video demonstration here [(Demonstration Video)](https://drive.google.com/file/d/10BsdG9Q_iznuHvMeiyBu6FtfrUq_AhGE/view?usp=drive_link)
+
 <table>
   <tr>
     <td><img src="Images/pic1.jpeg" width="480"></td>
@@ -14,7 +17,7 @@ This repository contains the graduation project developed for the Network Engine
 ## Project Overview
 Current traffic lights operate on pre-set timers (fixed-time inefficiency), ignoring real-time traffic load, which leads to high latency at intersections and critical delays for emergency responders. 
 
-Our proposed system is a cost-effective, easily deployable Smart Traffic Management System that utilizes **Computer Vision (YOLOv8)**, **IoT infrastructure**, and a mathematically proven Dynamic Optimization Algorithm to minimize wait times, maximize intersection throughput, and prioritize emergency vehicles.
+Our proposed system is a cost-effective, easily deployable Smart Traffic Management System that utilizes Computer Vision (YOLOv8), IoT infrastructure, and a Dynamic Algorithm to minimize wait times, maximize intersection throughput, and prioritize emergency vehicles.
 
 ## Key Features & Objectives
 * **AI Vehicle Detection:** High-accuracy real-time vehicle counting and emergency vehicle recognition using YOLOv8.
