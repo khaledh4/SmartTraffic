@@ -77,7 +77,7 @@ To demonstrate the system in a real-world scenario, a physical scale model was b
     </td>
     <td align="center" width="33%">
       <img src="Images/sticker.jpg" height="220" width="220" style="object-fit: cover;"><br>
-      <sub><b>Road Design:</b> Vinyl rolls for road textures and lane markings.</sub>
+      <sub><b>Road Design:</b> Rolls for road textures and lane markings.</sub>
     </td>
     <td align="center" width="33%">
       <img src="Images/pipe.jpg" height="220" width="220" style="object-fit: cover;"><br>
